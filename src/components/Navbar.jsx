@@ -40,7 +40,7 @@ const Navbar = () => {
   const logoContainerStyle = {
     position: 'absolute',
     left: '50%',
-    top: isMobile ? '100%' : '100%',
+    top: '100%',
     transform: 'translate(-50%, -50%)',
     zIndex: 110,
     display: 'flex',
@@ -133,8 +133,8 @@ const Navbar = () => {
       </div>
 
       <div style={menuContainerStyle}>
-        <Link to="/" onClick={() => setMenuOpen(false)} style={location.pathname === '/' ? activeLinkStyle : navLinkStyle}>HOME</Link>
-        <Link to="/" onClick={() => setMenuOpen(false)} style={navLinkStyle}>MENU</Link>
+        <Link to="/" onClick={() => setMenuOpen(false)} style={navLinkStyle}>HOME</Link>
+        <Link to="/" onClick={() => setMenuOpen(false)} style={location.pathname === '/' ? activeLinkStyle : navLinkStyle}>MENU</Link>
         <Link to="/" onClick={() => setMenuOpen(false)} style={navLinkStyle}>MAKE A RESERVATION</Link>
         <Link to="/" onClick={() => setMenuOpen(false)} style={navLinkStyle}>CONTACT US</Link>
         <Link to="/admin" onClick={() => setMenuOpen(false)} style={adminButtonStyle}>ADMIN</Link>
