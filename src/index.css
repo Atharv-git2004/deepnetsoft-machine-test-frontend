@@ -1,1 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Oswald:wght@400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #000000;
+}
