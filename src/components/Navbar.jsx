@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   const brandImageStyle = {
-    width: isMobile ? '150px' : '205px',
+    width: isMobile ? '120px' : '205px',
     height: 'auto',
     opacity: 1,
     objectFit: 'contain',
@@ -46,6 +46,11 @@ const Navbar = () => {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+  };
+
+  const logoImageStyle = {
+    width: isMobile ? '60px' : '80px',
+    height: 'auto'
   };
 
   const menuContainerStyle = {
@@ -116,15 +121,13 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {!isMobile && (
-        <div style={logoContainerStyle}>
-          <img 
-            src="/logo.png" 
-            alt="Logo" 
-            style={{ width: '80px', height: 'auto' }} 
-          />
-        </div>
-      )}
+      <div style={logoContainerStyle}>
+        <img 
+          src="/logo.png" 
+          alt="Logo" 
+          style={logoImageStyle} 
+        />
+      </div>
 
       <div style={hamburgerStyle} onClick={() => setMenuOpen(!menuOpen)}>
         <div style={barStyle}></div>
